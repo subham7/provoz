@@ -1,0 +1,322 @@
+.body-wrapper {
+      overflow-x: hidden;
+      font-family: 'Ubuntu', sans-serif;
+}
+.top-section {
+      height: 100vh;
+      position: relative;
+      background: linear-gradient(0deg, #3b9aca 0, #2d6ca5 39%, #222654 100%);
+}
+.tsc {
+      height: 100vh;
+}
+.navbar {
+      padding-top: 30px;
+}
+.navbar a {
+      color: rgba(255, 255, 255, .75);
+}
+#logo {
+      height: 1.8em;
+      width: auto;
+}
+#illustration {
+      height: 23em;
+      width: auto;
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      opacity: 0.8;
+      filter: alpha(opacity=60);
+      z-index: 1000;
+}
+.top-section-text {
+      margin-top: 150px;
+}
+.top-section-text p {
+      /* text-transform: uppercase; */
+      letter-spacing: 3px;
+      font-size: 1.3em;
+}
+#text-anim {
+      animation: type 3s steps(25);
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 4px solid #000;
+      width: 25ch !important;
+}
+
+@keyframes type {
+      0% {
+            width: 0ch;
+      }
+      100% {
+            width: 25ch;
+      }
+}
+
+.line-1 {
+      position: relative;
+      top: 50%;
+      width: 24em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255, 255, 255, .75);
+      font-size: 180%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+}
+.icon-col {
+      text-align: center;
+}
+.icon-section {
+      padding: 30px 0;
+      background-color: rgb(248, 239, 239);
+}
+.icon-col img {
+      height: 6em;
+      width: auto;
+}
+.icon-col h4 {
+      color: #3fcd9c;
+}
+.about-section {
+      position: relative;
+      height: 100vh;
+      color: #444d5c;
+}
+.about-section img {
+      position: absolute;
+      left: 0;
+      height: 680px;
+      z-index: 1;
+}
+.about-text {
+      padding-top: 100px;
+      z-index: 10;
+      text-align: right;
+}
+.about-text-para {
+      margin: 10px 0 0 70%;
+      font-size: 0.8em;
+}
+.section-right-text h1 {
+      text-transform: uppercase;
+      font-size: 4em;
+      letter-spacing: 5px;
+      line-height: 1em;
+}
+.about-line {
+       width: calc(2ch + 25px);
+       border-bottom: 5px solid #cd3333;
+       margin-top: 20px;
+}
+.about-section h4 {
+      margin-left: 60%;
+}
+.about-icon {
+      margin: 40px 0 0 50%;
+}
+.about-icon img {
+      height: 40px;
+}
+
+/* Animation */
+
+.anim-typewriter {
+      animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 24em;
+      }
+}
+
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, .75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
+
+.top-section h1 {
+      font-size: 6em;
+      color: white;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+}
+
+.top-section span {
+      border-right: .05em solid;
+      animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+      50% {
+            border-color: transparent;
+      }
+}
+
+.work-section {
+      /* #444d5c */
+      background-color: #000;
+      color: #fff;
+      height: 100vh;
+}
+.work-section-bg {
+      background-image: url(../images/Background_Whatwedoi.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+}
+.work-section-layer {
+      background: rgba(0, 0, 0, 0.5);
+      height: 100vh;
+}
+.work-section img {
+      height: 100px;
+}
+.work-section .col-6 {
+      text-align: center;
+      margin-bottom: 20px;
+}
+.work-section .col-6 p {
+      margin: 0 35px;
+      font-size: 0.8em; 
+}
+.section-left-text {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 100px;
+}
+.work-section .section-left-text h1:nth-child(3) {
+      width: calc(2ch + 25px);
+      border-bottom: 5px solid #cd3333;
+      padding-bottom: 20px;
+}
+.section-left {
+      position: relative;
+}
+.section-left-text h1 {
+      text-transform: uppercase;
+      font-size: 4em;
+      letter-spacing: 5px;
+      line-height: 1em;
+}
+.work-right-text {
+      margin: 100px 0;
+}
+.work-right-text li {
+      margin-bottom: 50px;
+      list-style-type: none; 
+}
+.work-right-text li p {
+      color: rgba(112, 111, 111, 0.659);
+      width: 45ch;
+}
+.client-section .section-left-text h1:nth-child(2) {
+      width: calc(7ch + 25px);
+      border-bottom: 5px solid #cd3333;
+      padding-bottom: 20px;
+}
+.client-right-text {
+      height: 100vh;
+}
+.client-section h1 {
+      text-align: right;
+}
+
+
+/* ---- reset ---- */
+
+canvas {
+      display: block;
+      vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #090909;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+canvas {
+      display: block;
+      vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #232741;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-size: 20%;
+      background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles {
+      background: #000022;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      width: 80px;
+      color: #13E8E9;
+      font-size: .8em;
+      text-align: left;
+      text-indent: 4px;
+      line-height: 14px;
+      padding-bottom: 2px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: bold;
+}
+
+.js-count-particles {
+      font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+      -webkit-user-select: none;
+      margin-top: 5px;
+      margin-left: 5px;
+}
+
+#stats {
+      border-radius: 3px 3px 0 0;
+      overflow: hidden;
+}
+
+.count-particles {
+      border-radius: 0 0 3px 3px;
+}
+#particles-js canvas {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      z-index: 9;
+} 
