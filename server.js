@@ -17,6 +17,10 @@ app.get('/', function (req, resp) {
   resp.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+app.get('/test', function (req, resp) {
+  resp.send("Test route")
+});
+
 app.listen(port, function () {
   console.log(`Server started at ${port}`);
 });
